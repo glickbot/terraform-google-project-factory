@@ -16,5 +16,5 @@
 
 output "project_id" {
   description = "The GCP project you want to enable APIs on"
-  value       = "${element(concat(google_project_service.project_services.*.project, list("")),0)}"
+  value       = "${element(concat(google_project_services.project_services.*.project, list("")),0)}"
 }

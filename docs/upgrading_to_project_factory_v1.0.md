@@ -143,7 +143,7 @@ cp terraform.tfstate terraform.tfstate.new
 -- module.project-factory
 Moved module.project-factory.random_id.random_project_id_suffix to module.project-factory.module.project-factory.random_id.random_project_id_suffix
 Moved module.project-factory.google_project.project to module.project-factory.module.project-factory.google_project.project
-Moved module.project-factory.google_project_service.project_services to module.project-factory.module.project-factory.google_project_service.project_services
+Moved module.project-factory.google_project_services.project_services to module.project-factory.module.project-factory.google_project_services.project_services
 Moved module.project-factory.null_resource.delete_default_compute_service_account to module.project-factory.module.project-factory.null_resource.delete_default_compute_service_account
 Moved module.project-factory.google_service_account.default_service_account to module.project-factory.module.project-factory.google_service_account.default_service_account
 State migration complete, verify migration with `terraform plan -state 'terraform.tfstate.new'`
@@ -177,7 +177,7 @@ google_compute_subnetwork_iam_member.group_role_to_vpc_subnets[0]: Refreshing st
 data.google_compute_default_service_account.default: Refreshing state...
 gsuite_group_member.api_s_account_api_sa_group_member: Refreshing state... (ID: 118009464384327601974)
 google_service_account.default_service_account: Refreshing state... (ID: projects/pf-gsuite-migrate-group-23dc/s...ate-group-23dc.iam.gserviceaccount.com)
-google_project_service.project_services: Refreshing state... (ID: pf-gsuite-migrate-group-23dc/compute.googleapis.com)
+google_project_services.project_services: Refreshing state... (ID: pf-gsuite-migrate-group-23dc/compute.googleapis.com)
 google_project_iam_member.gsuite_group_role: Refreshing state... (ID: pf-gsuite-migrate-group-23dc/roles/edit...up:pf-gsuite-migrate-group@phoogle.net)
 google_service_account_iam_member.service_account_grant_to_group: Refreshing state... (ID: projects/pf-gsuite-migrate-group-23dc/s...up:pf-gsuite-migrate-group@phoogle.net)
 google_compute_subnetwork_iam_member.service_account_role_to_vpc_subnets[0]: Refreshing state... (ID: projects/thebo-host-c15e/regions/us-wes...ate-group-23dc.iam.gserviceaccount.com)

@@ -45,7 +45,7 @@ TERRAFORM_STATE_LIST = [
     "module.project-factory.google_project_iam_member.controlling_group_vpc_membership[1]",  # noqa: E501
     "module.project-factory.google_project_iam_member.controlling_group_vpc_membership[2]",  # noqa: E501
     "module.project-factory.google_project_iam_member.gsuite_group_role",
-    "module.project-factory.google_project_service.project_services",
+    "module.project-factory.google_project_services.project_services",
     "module.project-factory.google_service_account.default_service_account",
     "module.project-factory.google_service_account_iam_member.service_account_grant_to_group",  # noqa: E501
     "module.project-factory.gsuite_group.group",
@@ -119,8 +119,8 @@ TERRAFORM_MOVES = [
         "module.project-factory.module.project-factory.google_project_iam_member.gsuite_group_role",  # noqa: E501
     ),
     (
-        "module.project-factory.google_project_service.project_services",
-        "module.project-factory.module.project-factory.google_project_service.project_services",  # noqa: E501
+        "module.project-factory.google_project_services.project_services",
+        "module.project-factory.module.project-factory.google_project_services.project_services",  # noqa: E501
     ),
     (
         "module.project-factory.google_service_account.default_service_account",  # noqa: E501
